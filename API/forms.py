@@ -25,7 +25,6 @@ class PollutantDataForm(forms.ModelForm):
                 )
             })
 
-
 class MeteorologicalDataForm(forms.ModelForm):
     class Meta:
         model = MeteorologicalData

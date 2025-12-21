@@ -4,17 +4,15 @@ import numpy as np
 import pandas as pd
 import django
 from datetime import datetime
-
-sys.path.append(r"D:\Skripsi\Program\Skripsi")
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Skripsi.settings")
-django.setup()
+from setup import setup
+setup()
 
 from django.conf import settings
 from API.models import Station, PollutantData, MeteorologicalData
 from API.models import MapView
 
 BASE_DIR = settings.BASE_DIR
-INPUT_DIR = os.path.join(BASE_DIR, "Dataset", "Data")
+INPUT_DIR = os.path.join(BASE_DIR, "Dataset", "example")
 OUTPUT_DIR = os.path.join(BASE_DIR, "Dataset", "Preprocess_1")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 

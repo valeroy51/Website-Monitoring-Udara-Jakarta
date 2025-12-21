@@ -1,0 +1,15 @@
+#Import this lib
+django
+django-tailwind
+django-browser-reload
+huey
+numpy
+pandas
+scipy
+scikit-learn
+joblib
+matplotlib
+seaborn
+tqdm
+requests
+haversine

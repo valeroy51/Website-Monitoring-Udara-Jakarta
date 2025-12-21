@@ -3,10 +3,8 @@ import sys
 import django
 import pandas as pd
 from math import radians, sin, cos, sqrt, atan2
-
-sys.path.append(r"D:\Skripsi\Program\Skripsi")
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Skripsi.settings")
-django.setup()
+from setup import setup
+setup()
 
 from django.conf import settings
 from API.models import Station, PollutantData, MeteorologicalData

@@ -12,10 +12,9 @@ import time
 from tqdm import tqdm
 from django.utils import timezone
 
-
-MERGE_DIR = r"D:\Skripsi\Program\Script\Dataset\Validasi\6.Merging Dataset"
-NORM_DIR  = r"D:\Skripsi\Program\Script\Dataset\Validasi\4.Normalisasi\4.1. Data Normalisasi"
-OUT_ROOT  = r"D:\Skripsi\Program\Script\Dataset\Slpit data Experiment\MSSA\Output web moving\40 100 newnew"
+MERGE_DIR = os.getenv("MERGE_DIR")
+NORM_DIR  = os.getenv("NORM_DIR")
+OUT_ROOT  = os.getenv("OUT_ROOT")
 
 ENERGY_THR = 0.97
 L_MIN, L_MAX = 2,150

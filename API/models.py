@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Station(models.Model):
     id_station = models.AutoField(primary_key=True)
     nama_stasiun = models.CharField(max_length=100)

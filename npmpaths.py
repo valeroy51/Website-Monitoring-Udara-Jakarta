@@ -7,6 +7,6 @@ def getPathNPM():
     if path and os.path.isfile(path):
         return path
     
-    raise RuntimeError("tidak ketemu")
+    raise RuntimeError("not found")
 
 # print(getPathNPM())

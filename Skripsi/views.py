@@ -452,7 +452,7 @@ def data(request):
                 df_clean = preprocess_uploaded_df(df.copy(), station=None, file_type="polutan")
 
 
-                OUTPUT_PRE = os.path.join(settings.BASE_DIR, "Validasi web")
+                OUTPUT_PRE = os.path.join(settings.BASE_DIR, "Dataset", "Preprocessed Website")
                 os.makedirs(OUTPUT_PRE, exist_ok=True)
 
                 pre_name = f"preprocessed_{uploaded_filename}"
@@ -514,7 +514,7 @@ def data(request):
                 print("\n=== PREPROCESSING DIMULAI ===")
                 df_clean = preprocess_uploaded_df(df.copy(), station=None, file_type=None)
 
-                OUTPUT_PRE = os.path.join(settings.BASE_DIR, "Validasi web")
+                OUTPUT_PRE = os.path.join(settings.BASE_DIR, "Dataset", "Preprocessed Website")
                 os.makedirs(OUTPUT_PRE, exist_ok=True)
 
                 pre_name = f"preprocessed_{uploaded_filename}"

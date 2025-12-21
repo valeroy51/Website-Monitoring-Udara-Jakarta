@@ -2,13 +2,8 @@ import subprocess
 import sys
 import os
 from django.conf import settings
-import django
-
-sys.path.append(r"D:\Skripsi\Program\Skripsi")
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Skripsi.settings")
-
-django.setup()
+from setup import setup
+setup()
 
 def run_script(path):
     print(f"\n==============================")

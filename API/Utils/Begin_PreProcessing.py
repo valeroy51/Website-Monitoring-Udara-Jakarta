@@ -5,10 +5,8 @@ import requests
 import time
 import django
 import sys
-
-sys.path.append(r"D:\Skripsi\Program\Skripsi")
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Skripsi.settings')
-django.setup()
+from setup import setup
+setup()
 
 from django.conf import settings
 BASE_DIR = settings.BASE_DIR
@@ -17,8 +15,8 @@ from API.models import Station
 
 def geocode_address(address):
     url = "https://nominatim.openstreetmap.org/search"
-    params = {"q": address, "format": "json", "limit": 1}
-    headers = {"User-Agent": "MyGeocodingApp/1.0 (valeroy@example.com)"}
+    params = {"q": address, "format": "jsonv2", "limit": 1, "polygon_geojson":1}
+    headers = {"referer": "https://nominatim.openstreetmap.org/ui/search.html?q={address}"}
     response = requests.get(url, params=params, headers=headers)
     if response.status_code == 200:
         data = response.json()

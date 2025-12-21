@@ -1,10 +1,8 @@
 import os
 import django
 import sys
-
-sys.path.append(r"D:\Skripsi\Program\Skripsi")
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Skripsi.settings")
-django.setup()
+from setup import setup
+setup()
 
 from API.models import (
     PollutantData, MeteorologicalData,

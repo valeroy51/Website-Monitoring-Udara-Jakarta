@@ -1,5 +1,0 @@
-=== LOG WAKTU (detik) ===
-Tuning: 133.39
-Rekonstruksi Best L: 35.32
-Evaluasi: 0.96
-TOTAL: 169.85

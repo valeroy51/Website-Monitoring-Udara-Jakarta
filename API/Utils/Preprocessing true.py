@@ -16,7 +16,7 @@ import warnings
 #====================RUNNING DATASET====================#
 #=======================================================#
 
-Dataset = r"D:\Skripsi\Program\Script\Dataset\Data"
+Dataset = os.getenv("Data_Dir")
 
 def load_excels(folder_path, skip_header=False):
     excel_files = glob.glob(os.path.join(folder_path, "*.xlsx"))

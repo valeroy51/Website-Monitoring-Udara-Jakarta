@@ -8,10 +8,8 @@ from scipy.stats import spearmanr
 import warnings
 import django
 from datetime import date
-
-sys.path.append(r"D:\Skripsi\Program\Skripsi")
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Skripsi.settings")
-django.setup()
+from setup import setup
+setup()
 
 from django.conf import settings
 from API.models import CorrelationAnalysis

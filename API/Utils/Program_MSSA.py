@@ -17,10 +17,9 @@ L_MIN, L_MAX = 40,100
 N_JOBS_INNER = -1
 LAMBDA_RIDGE = 1e-3
 
-
-MERGE_DIR = r"D:\Skripsi\Program\Script\Dataset\Validasi\6.Merging Dataset"
-NORM_DIR  = r"D:\Skripsi\Program\Script\Dataset\Validasi\4.Normalisasi\4.1. Data Normalisasi"
-OUT_ROOT  = fr"D:\Skripsi\Program\Script\Dataset\Slpit data Experiment\MSSA\Output web moving\New MSSA 2 {L_MIN} {L_MAX}"
+MERGE_DIR = os.getenv("MERGE_DIR")
+NORM_DIR  = os.getenv("NORM_DIR")
+OUT_ROOT  = os.getenv("OUT_ROOT")
 
 SKIP_COLS = {"tanggal", "stasiun", "Tanggal", "Stasiun"}
 POLUTAN   = {"pm10", "pm25", "so2", "no2", "co", "o3"}

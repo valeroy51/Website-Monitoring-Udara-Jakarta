@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Django
+db.sqlite3
+.env
+*.env
+staticfiles/
+media/
+
+# Django Tailwind
+node_modules/
+package-lock.json
+npm-debug.log
+yarn.lock
+theme/static_src/node_modules/
+
+# Dataset
+Dataset/*
+!Dataset/example/
+!Dataset/example/**
+
+# Models
+*.joblib
+*.pkl
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Static Source
+!static/**

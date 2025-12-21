@@ -1,13 +1,7 @@
 import os
 import sys
-
-CURRENT = os.path.abspath(__file__)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(CURRENT)))
-sys.path.insert(0, BASE_DIR)
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Skripsi.settings")
-import django
-django.setup()
+from setup import setup
+setup()
 
 import glob
 from django.conf import settings
