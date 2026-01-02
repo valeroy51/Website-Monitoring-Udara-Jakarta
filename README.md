@@ -36,16 +36,29 @@ Pastikan Python dan Node.js telah terpasang, kemudian install dependency Python:
 pip install -r requirements.txt
 ```
 
-### 3. Konfigurasi Environment
+### 3. Instalasi Node.js dan npm untuk Tailwind
+Dikarenakan sistem ini menggunakan Tailwind CSS maka diperlukan Node.js dan npm.
+### a. Cek apakah npm sudah terpasang
+```bash
+npm --version
+```
+Jika perintah di atas tidak dikenali, maka Node.js dan npm belum terpasang.
+### b. Instal Node.js
+```bash
+https://nodejs.org/
+```
+Instalasi Node.js akan otomatis menyertakan npm.
+
+### 4. Konfigurasi Environment
 Salin file `.env.example` menjadi `.env`, lalu sesuaikan isinya dengan konfigurasi lokal (SECRET_KEY dan database).
 
-### 4. Setup Awal (First Time)
+### 5. Setup Awal (First Time)
 Jalankan script berikut untuk setup pertama kali:
 ```bash
 python "Start Website First Time.py"
 ```
 
-### 5. Menjalankan Aplikasi
+### 6. Menjalankan Aplikasi
 Jalankan aplikasi Django dengan perintah:
 ```bash
 python manage.py runserver
@@ -66,7 +79,7 @@ dapat juga dengan menjalankan perintah:
 python manage.py tailwind dev
 ```
 
-### 6. Akses Website
+### 7. Akses Website
 Buka browser dan akses:
 ```
 http://127.0.0.1:8000/
